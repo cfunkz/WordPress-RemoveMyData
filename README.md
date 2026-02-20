@@ -2,8 +2,6 @@
 
 Most "delete account" plugins for WordPress are either too bloated or surprisingly insecure. I built **Remove My Data** to provide a middle ground: a lightweight, GDPR-friendly way for users to delete their own accounts using a secure, email-verified workflow.
 
-It doesn’t just "delete a user"—it cleans up after them, wiping comments and providing hooks for you to clear out custom meta or third-party data.
-
 ## Screenshots
 
 <img width="1888" height="721" alt="image" src="https://github.com/user-attachments/assets/29e01614-3c9a-42c8-9b7e-d66ca35f74dd" />
