@@ -187,6 +187,14 @@ function rmd_handle_email_confirmation() {
         wp_delete_comment( (int) $comment->comment_ID, true );
     }
 
+    // Delete comment votes (upvotes/downvotes) cast by the user.
+    global $wpdb;
+    $wpdb->delete(
+        $wpdb->prefix . 'wc_users_voted',
+        [ 'user_id' => $user_id ],
+        [ '%d' ]
+    );
+
     // Delete the user account. Pass 0 so any authored posts are left
     // unattributed (null is undocumented — always be explicit).
     wp_delete_user( $user_id, 0 );
