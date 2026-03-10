@@ -21,7 +21,7 @@ Most "delete account" plugins for WordPress are either too bloated or surprising
 2. **The Request:** The user clicks the button, and the plugin sends an email with a unique, hashed token.
 3. **The Wipe:** Upon clicking the email link, the plugin:
 * Wipes the user's comments.
-* Fires a developer hook for custom cleanup.
+* Sends a hook for custom cleanup.
 * Deletes the user account.
 * Notifies the site admin (optional).
 
